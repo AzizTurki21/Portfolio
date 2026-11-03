@@ -1,315 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- --------- UNICONS ---------- -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-
-    <!-- --------- CSS ---------- -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- --------- FAVICON ---------- -->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-
-    <title>Turki's Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mohamed Aziz Turki — AI, IoT, embedded systems, robotics and creative video editing.">
+  <meta name="theme-color" content="#090b0a">
+  <title>Aziz Turki — Engineer & Creative</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
 </head>
 <body>
-   <div class="container">
-    <!-- --------------- HEADER --------------- -->
-      <nav id="header">
-        <div class="nav-logo">
-             <p class="nav-name">Turki</p>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Aziz Turki home"><span class="brand-mark">AT<span>.</span></span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#work">Work</a><a href="#creative">Creative</a><a href="#journey">Journey</a>
+      <a class="nav-contact" href="#contact">Let's talk <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> BASED IN MILAN, ITALY <span class="eyebrow-line"></span> AVAILABLE FOR OPPORTUNITIES</p>
+        <h1>Building at the<br>edge of <em>ideas</em><br>and technology<span class="accent">.</span></h1>
+        <p class="hero-intro">I'm <strong>Mohamed Aziz Turki</strong> — an AI Master's student with a background in embedded systems, IoT and robotics. I build at the intersection of software and the physical world.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <span>↘</span></a><a class="text-link" href="#contact">Get in touch <span>↗</span></a></div>
+      </div>
+      <div class="hero-portrait reveal">
+        <div class="portrait-frame">
+          <img src="assets/images/aziz-turki.jpg" alt="Portrait of Mohamed Aziz Turki">
+          <div class="portrait-overlay"></div>
+          <span class="portrait-index">AZIZ TURKI / 2026</span>
+          <span class="portrait-caption">AI · IoT · EMBEDDED SYSTEMS</span>
         </div>
-        <div class="nav-menu" id="myNavMenu">
-            <ul class="nav_menu_list">
-                <li class="nav_list">
-                    <a href="#home" class="nav-link active-link">Home</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#about" class="nav-link">About</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#contact" class="nav-link">Contact</a>
-                    <div class="circle"></div>
-                </li>
-            </ul>
-            <!-- Add this inside your header nav -->
-            <label class="switch">
-                <input type="checkbox" id="darkModeToggle">
-                <span class="slider round"></span>
-              </label>              
-        </div>
-        
-        <div class="nav-menu-btn">
-            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
-        </div>
-      </nav>
+        <div class="portrait-orbit orbit-a"></div>
+        <div class="portrait-orbit orbit-b"></div>
+        <span class="portrait-coordinate">45°31' N<br>9°11' E</span>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span><span>01 / 05</span></div>
+    </section>
 
+    <section class="section-wrap about-section" id="about">
+      <div class="section-heading reveal"><p class="eyebrow">01 — THE PERSON BEHIND THE BUILDS</p><h2>Curious by nature.<br><em>Builder</em> by choice.</h2></div>
+      <div class="about-grid">
+        <p class="about-lead reveal">I like turning ideas into things that work — from connected devices and embedded prototypes to intelligent software and visual stories.</p>
+        <div class="about-details reveal"><p>I'm currently pursuing a Master's degree in <strong>Artificial Intelligence for Science and Technology</strong> at the University of Milano-Bicocca. My foundation is in electronics, automation and industrial computing.</p><p>My interests span computer vision, machine learning, connected systems, robotics and creative video editing. I enjoy learning across disciplines and bringing them together in practical projects.</p><div class="about-tags"><span>Problem solving</span><span>Hands-on engineering</span><span>Creative thinking</span></div></div>
+      </div>
+    </section>
 
-    <!-- -------------- MAIN ---------------- -->
-    <main class="wrapper">
-       <!-- -------------- FEATURED BOX ---------------- -->
-       <section class="featured-box" id="home">
-          <div class="featured-text">
-            <div class="featured-text-card">
-                <span style="background-color:rgb(152, 152, 214)">Mohamed Aziz Turki</span>
-            </div>
-            <div class="featured-name">
-                <p>I'm an <span class="typedText"></span> Student</p>
-            </div>
-            <div class="featured-text-info">
-                <p>I am a passionate student licensed in embedded systems and mobile technologies. I thrive on learning new skills and continuously improving myself.
-                     My dedication to staying at the forefront of technological advancements drives me to take on challenges and excel in my field.
-                </p>
-            </div>
-            <div class="featured-text-btn">
-                <a class="btn blue-btn" href="#contact" style="text-decoration-line: none;"> Hire Me</a>
-                <a href="assets/files/myresume.pdf" target="_blank" style="text-decoration-line:none; color:black" class="btn">Download CV <i class="uil uil-file-alt"></i></a>
-            </div>
-            <div class="social_icons">
-                <a href="https://www.linkedin.com/in/mohamed-aziz-turki-21r/" target="_blank" style=" text_decoration:none; color:black" class="icon"><i class="uil uil-linkedin-alt"></i></a>
-                <a href="https://github.com/AzizTurki21" target="_blank" style=" text_decoration:none; color:black" class="icon"><i class="uil uil-github-alt"></i></a>
-            </div>
-          </div>
-          <div class="featured-image">
-            <div class="image">
-                <img src="assets/images/avatar.png" alt="avatar">
-            </div>
-          </div>
-          <div class="scroll-icon-box">
-            <a href="#about" class="scroll-btn">
-                <i class="uil uil-mouse-alt"></i>
-                <p>Scroll Down</p>
-            </a>
-          </div>
+    <section class="section-wrap work-section" id="work">
+      <div class="section-heading reveal"><p class="eyebrow">02 — SELECTED ENGINEERING</p><h2>Ideas into <em>systems.</em></h2><p class="section-sub">A selection of engineering and software work. Detailed case studies will be added as each project is reviewed.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-featured reveal"><div class="project-visual traffic-visual"><div class="traffic-road"></div><div class="traffic-node node-a"></div><div class="traffic-node node-b"></div><div class="traffic-node node-c"></div><span class="visual-code">VISION / EDGE / MQTT</span></div><div class="project-meta"><span>AI · COMPUTER VISION · IoT</span><span>01</span></div><h3>Smart Traffic Management</h3><p>Exploring emergency-vehicle detection and adaptive traffic control using edge computing, cameras and connected devices.</p><a class="project-link" href="#contact">Case study coming soon <span>↗</span></a></article>
+        <article class="project-card reveal"><div class="project-visual robot-visual"><div class="robot-ring"></div><div class="robot-cross"></div><span class="visual-code">ESP32 / MOTION / CONTROL</span></div><div class="project-meta"><span>ROBOTICS · EMBEDDED</span><span>02</span></div><h3>All-Terrain Robot</h3><p>An embedded robotics project combining motor control, power electronics and practical competition experience.</p><a class="project-link" href="#contact">Case study coming soon <span>↗</span></a></article>
+        <article class="project-card reveal"><div class="project-visual iot-visual"><div class="iot-wave wave-a"></div><div class="iot-wave wave-b"></div><div class="iot-device">ESP</div><span class="visual-code">ESP8266 / MQTT / ANDROID</span></div><div class="project-meta"><span>IoT · MOBILE · MQTT</span><span>03</span></div><h3>Smart Light Control</h3><p>A connected lighting prototype linking an Android application with an ESP8266 through MQTT.</p><a class="project-link" href="#contact">Case study coming soon <span>↗</span></a></article>
+        <article class="project-card reveal"><div class="project-visual valve-visual"><div class="valve-pipe"></div><div class="valve-wheel"></div><span class="visual-code">SENSING / AUTOMATION</span></div><div class="project-meta"><span>EMBEDDED · AUTOMATION</span><span>04</span></div><h3>Temperature-Based Valve Control</h3><p>An ESP8266-based security and control prototype developed during an electronics internship.</p><a class="project-link" href="#contact">Case study coming soon <span>↗</span></a></article>
+      </div>
+    </section>
 
-       </section>
-       <!-- -------------- ABOUT BOX ---------------- -->
-       <section class="section" id="about">
-          <div class="top-header">
-            <h1>About Me</h1>
-          </div>
-          <div class="row">
-            <div class="col">
-                <div class="about-info">
-                    <h3>My introduction</h3>
-                    <p>I am a passionate student licensed in embedded systems and mobile technologies. I thrive on learning new skills and continuously improving myself.
-                        My dedication to staying at the forefront of technological advancements drives me to take on challenges and excel in my field.
-                    </p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Frontend</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>Bootstrap</span>
-                        <span>JavaScript</span>
-                        <span>XML</span>
-                    </div>
-                </div>
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Backend</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>PHP</span>
-                        <span>JAVA</span>
-                        <span>Python</span>
-                        <span>C++</span>
-                    </div>
-                </div>
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Database</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>MySQL</span>
-                    </div>
-                </div>
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Other</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>Arduino</span>
-                        <span>VHDL</span>
-                        <span>AI</span>
-                        <span>Sony Vegas</span>
-                        <span>After Effects</span>
-                        <span>PowerPoint</span>
-                    </div>
-                </div>
-            </div>
-          </div>
-       </section>
+    <section class="creative-section" id="creative">
+      <div class="section-wrap creative-inner">
+        <div class="creative-copy reveal"><p class="eyebrow">03 — THE CREATIVE SIDE</p><h2>Not everything<br>is <em>code.</em></h2><p>Video editing is another way I think, experiment and tell stories. I work with motion, rhythm, visual effects and atmosphere.</p><div class="creative-tools"><span>AFTER EFFECTS</span><span>SONY VEGAS</span><span>EDITING</span><span>MOTION</span></div><a class="button button-outline" href="#contact">Ask for my showreel <span>↗</span></a></div>
+        <div class="reel-frame reveal"><div class="reel-screen"><div class="play-button">▶</div><span class="reel-top">VISUAL EXPERIMENTS / 2026</span><span class="reel-bottom">SHOWREEL SLOT — ADD YOUR VIDEO</span><div class="reel-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><p class="reel-note">Your video montage or embedded showreel will live here.</p></div>
+      </div>
+    </section>
 
-       <!-- -------------- PROJECT BOX ---------------- -->
+    <section class="section-wrap journey-section" id="journey">
+      <div class="section-heading reveal"><p class="eyebrow">04 — THE JOURNEY SO FAR</p><h2>Learning. Building.<br><em>Moving forward.</em></h2></div>
+      <div class="timeline">
+        <div class="timeline-item reveal"><span class="timeline-date">2025 — PRESENT</span><div><h3>MSc · Artificial Intelligence for Science and Technology</h3><p>University of Milano-Bicocca · Italy</p></div><span class="timeline-mark"></span></div>
+        <div class="timeline-item reveal"><span class="timeline-date">2024 — 2025</span><div><h3>ICT Teacher</h3><p>Al Maarifa Private High School</p></div><span class="timeline-mark"></span></div>
+        <div class="timeline-item reveal"><span class="timeline-date">2024</span><div><h3>Bachelor's Degree · Electronics, Electrotechnics and Automation</h3><p>Industrial Computing · ISET Rades, Tunisia</p></div><span class="timeline-mark"></span></div>
+        <div class="timeline-item reveal"><span class="timeline-date">2024</span><div><h3>Graduation Project · Smart Traffic System</h3><p>LifEye · Tunisia</p></div><span class="timeline-mark"></span></div>
+      </div>
+    </section>
 
-       <section class="section" id="projects">
-          <div class="top-header">
-              <h1>Projects</h1>
-          </div>
-          <div class="project-container">
-    
-            <div class="project-box">
-                <i class="uil uil-briefcase-alt"></i>
-                <h3>5 Completed</h3>
-                <a href="projects.html" class="btn">View Details</a>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-award"></i>
-                <h3>Experience</h3>
-                <label>3 Years in the field</label>
-            </div>
-          </div>
-       </section>
+    <section class="section-wrap skills-section">
+      <div class="section-heading reveal"><p class="eyebrow">05 — THE TOOLKIT</p><h2>Tools I use to<br><em>make things happen.</em></h2></div>
+      <div class="skills-grid reveal">
+        <div><span class="skill-index">01</span><h3>Programming</h3><p>Python · C · C++ · Java · JavaScript · SQL · PHP</p></div>
+        <div><span class="skill-index">02</span><h3>AI & Data</h3><p>Machine Learning · YOLOv8 · OpenCV · Pandas</p></div>
+        <div><span class="skill-index">03</span><h3>Embedded & IoT</h3><p>ESP32 · ESP8266 · Raspberry Pi · MQTT · LoRa</p></div>
+        <div><span class="skill-index">04</span><h3>Tools & Creative</h3><p>Linux · Git · Android Studio · VS Code · After Effects</p></div>
+      </div>
+      <p class="skills-note">This list is a starting point; we'll verify and refine it against your projects before publishing.</p>
+    </section>
 
-       <!-- -------------- CONTACT BOX ---------------- -->
-
-       <section class="section" id="contact">
-          <div class="top-header">
-            <h1>Get in touch</h1>
-          </div>
-          <div class="row">
-             <div class="col">
-                <div class="contact-info">
-                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                    <p><i class="uil uil-envelope"></i> Email: turkiaziz2121@gmail.com</p>
-                    <p><i class="uil uil-phone"></i> Tel: +216 95 838 158</p>
-                </div>
-             </div>
-             <div class="col">
-                <div class="form-control">
-                    <div class="form-inputs">
-                        <input type="text" id="name" class="input-field" placeholder="Name">
-                        <input type="text" id="email" class="input-field" placeholder="Email">
-                    </div>
-                    <div class="text-area">
-                        <textarea id="message" placeholder="Message"></textarea>
-                    </div>
-                    <div class="form-button">
-                        <button class="btn" onclick="sendmail()" >Send <i class="uil uil-message"></i></button>
-                    </div>
-                </div>
-             </div>
-          </div>
-       </section>
-
-    </main>
-
-
-    <!-- --------------- FOOTER --------------- -->
-    <footer>
-        <div class="top-footer">
-            <p>Med Aziz Turki</p>
-        </div>
-        <div class="middle-footer">
-            <ul class="footer-menu">
-                <li class="footer_menu_list">
-                    <a href="#home">Home</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#about">About</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#projects">Projects</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <div class="bottom-footer">
-            <p>Copyright &copy; <a style="text-decoration: none;">Med Aziz Turki</a> - All rights reserved</p>
-        </div>
-    </footer>
-
-    </div>
-
-
-
-
-    <!-- ----- TYPING JS Link ----- -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-       <!-- ----- SCROLL REVEAL JS Link----- -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- ----- MAIN JS ----- -->
-    <script src="assets/js/main.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "eI8NF2QgN30j85P-F",
-      });
-   })();
-</script>
-<script>  
-    function sendmail() {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-   if (name && email && message) {
-    emailjs.send("service_2e6xy19","template_0biwpgj", {
-          from_name: name,
-          email_id: email,
-          message: message
-      })
-      .then(function(response) {
-          alert('Message sent successfully!');
-      }, function(error) {
-          alert('Failed to send the message. Please try again.');
-      });
-  } else {
-      alert('Please fill out all fields.');
-  }
-}
-
-</script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-    const toggleSwitch = document.querySelector('.switch input[type="checkbox"]');
-
-    // Load the theme from local storage if it exists
-    const currentTheme = localStorage.getItem('theme');
-    if (currentTheme) {
-        document.body.classList.add(currentTheme);
-        if (currentTheme === 'dark-mode') {
-            toggleSwitch.checked = true;
-        }
-    }
-
-    toggleSwitch.addEventListener('change', function () {
-        if (toggleSwitch.checked) {
-            document.body.classList.add('dark-mode');
-            localStorage.setItem('theme', 'dark-mode');
-        } else {
-            document.body.classList.remove('dark-mode');
-            localStorage.setItem('theme', 'light-mode');
-        }
-    });
-});
-
-      </script>
-    
-      
+    <section class="contact-section" id="contact"><div class="section-wrap contact-inner reveal"><p class="eyebrow">06 — HAVE A PROJECT IN MIND?</p><h2>Let's build<br>something <em>meaningful.</em></h2><a class="contact-email" href="https://www.linkedin.com/in/mohamed-aziz-turki-21r/" target="_blank" rel="noreferrer">Connect with me on LinkedIn <span>↗</span></a><div class="contact-bottom"><div><a href="https://github.com/AzizTurki21" target="_blank" rel="noreferrer">GITHUB ↗</a><a href="https://www.linkedin.com/in/mohamed-aziz-turki-21r/" target="_blank" rel="noreferrer">LINKEDIN ↗</a></div><span>MILAN, ITALY · © <span id="year"></span> AZIZ TURKI</span></div></div></section>
+  </main>
 </body>
-
 </html>
