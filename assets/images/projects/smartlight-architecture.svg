@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" role="img" aria-labelledby="title desc">
+<title id="title">Illustrative smart lighting system diagram</title><desc id="desc">Conceptual flow from Android app through MQTT to an ESP8266 and a light switching stage.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#17231b"/><stop offset="1" stop-color="#0a0d0b"/></linearGradient><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9z" fill="#b7f36b"/></marker></defs>
+<rect width="900" height="340" rx="18" fill="url(#bg)"/><text x="38" y="42" fill="#b7f36b" font-family="monospace" font-size="15" letter-spacing="2">SMART LIGHT · CONCEPTUAL FLOW</text>
+<g font-family="Arial,sans-serif" text-anchor="middle"><g fill="#111a13" stroke="#8ebd5a" stroke-width="2">
+<rect x="34" y="102" width="175" height="118" rx="14"/><rect x="258" y="102" width="158" height="118" rx="14"/><rect x="465" y="102" width="175" height="118" rx="14"/><rect x="689" y="102" width="177" height="118" rx="14"/></g>
+<g fill="#edf2ed"><text x="121" y="149" font-size="21">Android app</text><text x="121" y="181" fill="#9aa69c" font-size="15">ON / OFF command</text>
+<text x="337" y="149" font-size="21">MQTT broker</text><text x="337" y="181" fill="#9aa69c" font-size="15">message transport</text>
+<text x="552" y="149" font-size="21">ESP8266</text><text x="552" y="181" fill="#9aa69c" font-size="15">receiver / controller</text>
+<text x="777" y="149" font-size="21">Switching stage</text><text x="777" y="181" fill="#9aa69c" font-size="15">relay → light load</text></g></g>
+<g stroke="#b7f36b" stroke-width="3" fill="none" marker-end="url(#arrow)"><path d="M211 161h39"/><path d="M418 161h39"/><path d="M642 161h39"/></g>
+<text x="38" y="286" fill="#c8d1c9" font-family="Arial,sans-serif" font-size="15">Illustrative architecture only. The repository includes the Android MQTT client, not receiver firmware or wiring.</text></svg>
