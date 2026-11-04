@@ -7,9 +7,9 @@
 <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">
 <path d="M318 272H380V213H412" stroke="#16a34a"/><path d="M318 301H365V248H412" stroke="#e53935"/><path d="M318 331H389V281H412" stroke="#22292d"/>
 <path d="M585 213H661V248H704" stroke="#16a34a"/><path d="M585 248H646V279H704" stroke="#e53935"/><path d="M585 281H671V310H704" stroke="#22292d"/>
-<path d="M790 338V392H858V365" stroke="#cf2f2f"/><path d="M815 365V406H882V365" stroke="#252b2e"/>
+<path d="M790 364V390H804" stroke="#cf2f2f"/><path d="M820 364V280H830V184" stroke="#cf2f2f"/><path d="M905 184H944V425H900V390" stroke="#252b2e"/>
 </g>
-<g font-family="Arial,sans-serif" font-size="14" fill="#26333b"><text x="340" y="202">DATA</text><text x="342" y="238">3V3</text><text x="342" y="275">GND</text><text x="627" y="238">GPIO → IN</text><text x="631" y="270">5V → VCC</text><text x="630" y="303">GND</text><text x="817" y="428">12V DC example</text></g>
+<g font-family="Arial,sans-serif" font-size="14" fill="#26333b"><text x="340" y="202">DATA</text><text x="342" y="238">3V3</text><text x="342" y="275">GND</text><text x="627" y="238">GPIO → IN</text><text x="631" y="270">5V → VCC</text><text x="630" y="303">GND</text><text x="824" y="386">+ 12V</text><text x="888" y="386">−</text><text x="867" y="197">valve + / −</text></g>
 <!-- controller board -->
 <g filter="url(#shadow)"><rect x="412" y="137" width="173" height="210" rx="15" fill="#151a1c" stroke="#7a8588" stroke-width="3"/><rect x="450" y="175" width="98" height="98" rx="9" fill="#252e32" stroke="#849194" stroke-width="2"/><rect x="468" y="194" width="62" height="60" rx="7" fill="#3b464a"/><text x="499" y="163" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="20" font-weight="700">ESP8266</text><text x="499" y="304" text-anchor="middle" fill="#cad4d4" font-family="Arial,sans-serif" font-size="15">controller</text><text x="499" y="326" text-anchor="middle" fill="#a5b0b2" font-family="Arial,sans-serif" font-size="13">temperature decision</text><g fill="#d5dadd"><circle cx="412" cy="213" r="7"/><circle cx="412" cy="248" r="7"/><circle cx="412" cy="281" r="7"/><circle cx="585" cy="213" r="7"/><circle cx="585" cy="248" r="7"/><circle cx="585" cy="281" r="7"/></g></g>
 <!-- sensor -->
